@@ -1,1 +1,48 @@
-# ML-Lab-2
+# Student Performance Prediction using Logistic Regression
+
+This repository contains code for building a logistic regression model to predict student performance based on various features. The model is trained on data from the Open University Learning Analytics dataset.
+
+## Overview
+
+The goal of this project is to develop a predictive model that can classify students into two categories: Pass or Not Pass, based on their demographic information, academic module, and weighted mean score of assessments. Logistic regression is chosen as the modeling technique due to its suitability for binary classification problems.
+
+## Files
+
+- `oulad-students.csv`: Dataset containing information about students.
+- `oulad-assessments.csv`: Dataset containing assessment information.
+
+## Libraries Used
+
+- `dplyr`: For data manipulation.
+- `tidyr`: For data tidying.
+- `caret`: For data splitting and modeling.
+
+## Workflow
+
+1. **Data Import**: Two CSV files containing student and assessment data are imported.
+2. **Feature Engineering**: The weighted mean score for each student is calculated and added as a feature.
+3. **Data Preparation**: Features are selected and converted into appropriate formats.
+4. **Model Training**: The logistic regression model is trained using the selected features.
+5. **Model Evaluation**: Predictions are made on the test set, and performance metrics such as accuracy, precision, recall, and F1 score are calculated.
+6. **Results**: The confusion matrix and performance metrics are printed.
+
+## Model Performance
+
+The model achieved the following performance metrics on the test set:
+
+- **Accuracy**: 0.78
+- **Precision**: 0.81
+- **Recall**: 0.79
+- **F1 Score**: 0.80
+
+## How to Use
+
+1. Clone this repository.
+2. Ensure that R and the required libraries are installed.
+3. Run the provided R script `student_performance_prediction.R`.
+4. View the output to analyze model performance and predictions.
+
+## References
+
+- Open University Learning Analytics Dataset: [Link](https://analyse.kmi.open.ac.uk/open_dataset)
+
