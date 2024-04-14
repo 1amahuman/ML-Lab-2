@@ -28,12 +28,22 @@ The goal of this project is to develop a predictive model that can classify stud
 
 ## Model Performance
 
-The model achieved the following performance metrics on the test set:
+The logistic regression model achieved the following performance metrics on the test set:
 
-- **Accuracy**: 0.78
-- **Precision**: 0.81
-- **Recall**: 0.79
-- **F1 Score**: 0.80
+- **Accuracy**: 0.54
+- **Precision**: 0.54
+- **Recall**: 0.99
+- **F1 Score**: 0.70
+
+The confusion matrix illustrating the model's predictions versus actual values is as follows:
+
+| Prediction |     0     |   1   |
+|------------|-----------|-------|
+|      0     |   6412    |  5483 |
+|      1     |     49    |  125  |
+
+These metrics provide insights into how well the model is performing in classifying students as Pass or Not Pass based on the selected features.
+
 
 ## How to Use
 
