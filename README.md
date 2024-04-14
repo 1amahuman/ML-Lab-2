@@ -24,11 +24,11 @@ The goal of this project is to develop a predictive model that can classify stud
 3. **Data Preparation**: Features are selected and converted into appropriate formats.
 4. **Model Training**: The logistic regression model is trained using the selected features.
 5. **Model Evaluation**: Predictions are made on the test set, and performance metrics such as accuracy, precision, recall, and F1 score are calculated.
-6. **Results**: The confusion matrix and performance metrics are printed.
+6. **Interpretation**: Besides accuracy, it's important to interpret other aspects of the model. For instance, precision represents the proportion of true positive predictions out of all positive predictions, indicating the model's ability to avoid false positives. Recall, on the other hand, represents the proportion of true positive predictions out of all actual positive instances in the data, showing the model's ability to capture all positive instances. F1 score is a harmonic mean of precision and recall, providing a balanced metric that considers both false positives and false negatives.
 
 ## Model Performance
 
-The logistic regression model achieved the following performance metrics on the test set:
+The model achieved the following performance metrics on the test set:
 
 - **Accuracy**: 0.54
 - **Precision**: 0.54
@@ -43,7 +43,6 @@ The confusion matrix illustrating the model's predictions versus actual values i
 |      1     |     49    |  125  |
 
 These metrics provide insights into how well the model is performing in classifying students as Pass or Not Pass based on the selected features.
-
 
 ## How to Use
 
